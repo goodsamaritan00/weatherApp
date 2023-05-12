@@ -1,0 +1,159 @@
+
+/* Current weather wrapper */
+
+.currWrapper {
+   padding: 1rem;
+   background-color: rgba(255, 255, 255, 0.7);
+   border-radius: 20px;
+   box-shadow: 2px 2px 5px gray;
+   max-width: 50em;
+   margin: 3rem auto;
+   position: relative;
+   min-height: 20em;
+ 
+}
+
+
+.currWrapper > * {
+    min-width: 100%
+}
+
+.loader {
+    min-width: 10px;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Input field and changing unit */
+
+.input > * {
+    padding: .5rem 1rem;
+    border: 1px solid gray;
+    outline: none;
+    
+}
+
+.input input {
+    border-radius: 20px 0 0 20px;
+}
+
+.input button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.inputChangeUnit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+
+.changeUnit button {
+    background: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.changeUnit button:focus {
+    opacity: 0.5;
+}
+
+.inputChangeUnit span {
+    height: 25px;
+    border-right: 2px solid rgb(90, 197, 233);
+}
+
+.inputChangeUnit button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/* Current weather and by hour  */
+.temperature {
+    font-size: 2rem;
+}
+
+
+.currByHour {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+
+.currByHour > * {
+    text-align: center;
+}
+
+.currByHour > *:nth-child(1) {
+    flex: 1 1 auto;
+    line-height: .1rem;
+    font-size: 1.5rem;
+}
+
+.currByHour > *:nth-child(2) {
+    flex: 1 1 auto;
+    font-size: 1.2rem;
+    line-height: .5rem;
+
+}
+
+.currByHour > *:nth-child(3) {
+    flex: 1 1 auto;
+}
+
+.currByHour > *:nth-child(4) {
+    flex: 1 1 100%;
+}
+
+.currByHour img {
+    height: 150px;
+}
+
+/* Weather by hour*/
+.byHour {
+    height: 175px;
+    overflow-y: scroll;
+    border-bottom: 2px solid rgb(194, 194, 194);
+    border-top: 2px solid rgb(194, 194, 194);
+}
+
+.byHour > * {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.byHour  p {
+    font-size: 1.4rem;
+}
+
+.byHour img {
+    height: 70px;
+}
+
+
+/* forecast */
+.forecast {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+   
+}
