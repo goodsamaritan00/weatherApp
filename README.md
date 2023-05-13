@@ -1,4 +1,4 @@
-#PROJECT PREVIEW: https://sweet-daifuku-fb7ff9.netlify.app/
+PROJECT PREVIEW: https://sweet-daifuku-fb7ff9.netlify.app/
 
 # Getting Started with Create React App
 
